@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading{
+    &.left{
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            left: 0;
+            bottom: -1.5rem;
+            background: #373737;
+        }
+    }
+    &.right{
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            right: 0;
+            bottom: -1.5rem;
+            background: #373737;
+        }
+    }
+}

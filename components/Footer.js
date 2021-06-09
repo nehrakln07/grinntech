@@ -48,7 +48,11 @@ const Footer = () =>{
                         </ul>
                     </div>
                     <div className="w-2/5 px-4">
-
+                    <div class="gmap_canvas">
+                        <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=grinntech%20motors%20and%20services&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://www.google.com/maps/place/Grinntech+Motors+%26+Services+Pvt.+Ltd./@13.095729,80.162676,13z/data=!4m5!3m4!1s0x0:0xd00b0bd5ad346d96!8m2!3d13.095545!4d80.1626649?hl=en-US"></a>
+                        <br/>
+                    </div>
                     </div>
                     <div className="w-2/5">
                         <div className="">

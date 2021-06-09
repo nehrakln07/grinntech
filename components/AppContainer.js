@@ -10,6 +10,7 @@ const AppContainer = ({title, childeren}) =>{
             <Head>
                 <title>{title || "Grinntech | Lithium-ion Battery Manufacturer"}</title>
                 <link rel="canonical" href="https://www.grinntech.com/" />
+                <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css"></link>
                 <meta property="og:locale" content="en_US"></meta>
                 <meta property="og:type" content="website"></meta>
                 <meta property="og:title" content="Grinntech"></meta>

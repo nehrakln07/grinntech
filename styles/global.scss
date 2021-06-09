@@ -2,8 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
 .heading{
     &.left{
+        animation: 1s ease-out 0s 1 slideInFromLeft;
         &:after{
             content: '';
             position: absolute;
@@ -15,6 +37,7 @@
         }
     }
     &.right{
+        animation: 1s ease-out 0s 1 slideInFromLeft;
         &:after{
             content: '';
             position: absolute;
@@ -25,4 +48,33 @@
             background: #373737;
         }
     }
+}
+
+.tilted-box {
+    position: relative;
+    .box-text{
+        position: absolute;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem 3rem;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        line-height: 41px;
+        background-color:rgb(0 0 0 / 50%);
+        z-index: 10;
+        display: none;
+        transition: linear .2s ease-in-out;
+    }
+    &:hover{
+        .box-text{
+            display: flex;
+        }
+    }
+}
+
+.tranform-tilt-30{
+    transform: matrix(1, 0, -0.4, 1, 0, 0);
 }

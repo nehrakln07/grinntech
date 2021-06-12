@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import AppContainer from '../components/AppContainer';
-import ProductsServices from '../components/ProductsServices';
+import ProductsServices from '../components/prodctsServices/ProductsServices';
 
 export default function Home() {
   return (

@@ -47,7 +47,7 @@ const HomeSliderComponent = (props) => {
                 props.sliderClassName ? props.sliderClassName : ""
               }`}
             >
-              <img className="h-80 sm:h-full" src={item.image} />
+              <img className="h-80 sm:h-auto" src={item.image} />
               {item.component && item.component()}
             </div>
           );

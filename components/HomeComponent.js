@@ -18,11 +18,6 @@ const P1 = "/assets/home-page/Intersect-1.png";
 const P2 = "/assets/home-page/Intersect.png";
 const P3 = "/assets/home-page/Intersect-3.png";
 
-const News1 = "/assets/news/news1.png";
-const News2 = "/assets/news/news1.png";
-const News3 = "/assets/news/news1.png";
-const News4 = "/assets/news/news1.png";
-
 const NEWS_CONFIG = [
   {
     image: "/assets/blog/11.webp",

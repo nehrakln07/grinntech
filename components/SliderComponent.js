@@ -27,7 +27,7 @@ const SliderComponent = (props) => {
               </div>
               <div className="text-sm p-2 h-24 pl-0 flex flex-col justify-between">
                 <Reveal effect="fadeInUp">
-                  <div className="divbb-2">
+                  <div className="mb-2 text-lg font-medium">
                     {item.text}
                   </div>
                   <div className="">

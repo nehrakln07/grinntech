@@ -154,7 +154,13 @@
 
 @media (min-width: 768px) {
   .w-30 {
-    width: 30%;
+    width: 30%!important;
+  }
+}
+
+@media (max-width: 600px) {
+  .m-w-full {
+    width: 100%!important;
   }
 }
 
@@ -168,4 +174,9 @@
   li{
     padding: .325rem 1rem;
   }
+}
+
+.line-gradient{
+  height: 2px;
+  background: linear-gradient(90deg, #06BF19 0%, rgba(255, 255, 255, 0) 101.05%);
 }

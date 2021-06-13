@@ -10,7 +10,7 @@ const SliderComponent = (props) => {
     speed: props.speed || 500,
     slidesToShow: props.slidesToShow || 1,
     slidesToScroll: props.slidesToScroll || 1,
-    autoplay: props.autoplay || false
+    autoplay: props.autoplay || false,
   };
 
   return (
@@ -30,7 +30,7 @@ const SliderComponent = (props) => {
                   <div className="mb-2 text-lg font-medium">
                     {item.text}
                   </div>
-                  <div className="">
+                  <div className="flex">
                     <a href={item.url} target="_blank" className="text-black border border-black py-2 px-4">
                       Learn More
                     </a>

@@ -69,15 +69,28 @@
 }
 
 .heading {
+
+  &.primary{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+  }
+
+  .secondary{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+
   &.left {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     &:after {
       content: "";
       position: absolute;
       width: 80px;
-      height: 5px;
+      height: 4px;
       left: 0;
-      bottom: -1.5rem;
+      bottom: -1.2rem;
       background: #01bf19;
     }
   }
@@ -87,9 +100,9 @@
       content: "";
       position: absolute;
       width: 80px;
-      height: 5px;
+      height: 4px;
       right: 0;
-      bottom: -1.5rem;
+      bottom: -1.2rem;
       background: #01bf19;
     }
   }
@@ -104,11 +117,12 @@
   display: flex;
   border-bottom: 1px solid #c4c4c4;
   .rc-tab-nav {
-    font-size: 24px;
-    padding: 1.5rem 0;
+    font-size: 1.325rem;
+    padding: 1.325rem 0;
     flex-grow: 1;
     cursor: pointer;
     &.active {
+      font-weight: 500;
       display: block;
       content: "";
       border-bottom: solid 3px #01bf19;
@@ -179,4 +193,63 @@
 .line-gradient{
   height: 2px;
   background: linear-gradient(90deg, #06BF19 0%, rgba(255, 255, 255, 0) 101.05%);
+}
+
+.home-arrow-button{
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  color: white;
+}
+
+.arrow-right,
+.arrow-left,
+.long-arrow-right,
+.long-arrow-left{
+  display: block;
+  margin: 30px auto;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+}
+.arrow-right,
+.long-arrow-right{
+ transform: rotate(135deg);
+}
+
+.arrow-left,
+.long-arrow-left{
+ transform: rotate(-45deg);
+}
+.long-arrow-right::after,
+.long-arrow-left::after{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 40px;
+  background-color: #FFFFFF;
+  transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
+}
+
+.slick-prev, .slick-next{
+  &:before{
+    top: 5rem;
+    z-index: 20;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+  }
+}
+
+.slick-prev{
+  transform: rotate(-45deg);
+}
+.slick-next{
+  transform: rotate(135deg);
 }

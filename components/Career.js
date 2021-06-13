@@ -67,11 +67,11 @@ const Career = () => {
       <div className="container">
         <div className="w-full my-10 flex flex-wrap items-center">
           <div className="w-full md:w-2/5">
-            <h1 className="text-4xl font-semibold">
+            <h1 className="text-5xl font-semibold">
               {" "}
               Come Invent <br /> With Us
             </h1>
-            <div className="mt-10">
+            <div className="my-10">
               <a
                 href="/"
                 target="_blank"
@@ -83,13 +83,13 @@ const Career = () => {
           </div>
           <div className="w-full md:w-3/5">
             <HomeSliderComponent
-              dots={isMobile ? false : true}
+              dots={false}
               slidesToShow={1}
               slidesToScroll={1}
               config={HOME_SLIDER_CONFIG}
               autoplay={true}
               infinite={true}
-              autoplaySpeed={5000}
+              autoplaySpeed={2000}
               cssEase={"linear"}
               customArrow={isMobile ? false : true}
             />
@@ -98,10 +98,10 @@ const Career = () => {
 
         <div className="w-full my-10">
           <div className="w-full flex flex-wrap">
-            <div className="w-full sm:w-1/2">
+            <div className="w-full sm:w-1/2 mb-8">
               <img className="m-auto" src="/assets/career.png" />
             </div>
-            <div className="w-full sm:w-1/2 px-8">
+            <div className="w-full sm:w-1/2 p-0 sm:px-8">
               <h4 className="text-green-450 text-2xl mb-2 font-medium">
                 We’re looking for curious minds to help bringing the EV
                 revolution.
@@ -126,7 +126,7 @@ const Career = () => {
             {OFFER.map((item, key) => {
               return (
                 <div
-                  className="w-full sm:w-2/5 w-30 p-4 text-center hover:shadow-2xl border-b-4 border-green-450"
+                  className="w-full sm:w-2/5 w-30 p-4 text-center hover:shadow-2xl border-b-4 border-green-450 mb-8"
                   style={{ background: "#F6F5F5" }}
                 >
                   <Reveal effect="fadeInUp">
@@ -151,7 +151,7 @@ const Career = () => {
             {JOB.map((item, key) => {
               return (
                 <div
-                  className="w-full sm:w-2/5 w-30 p-4 text-center hover:shadow-2xl border-b-4 border-green-450 "
+                  className="w-full sm:w-2/5 w-30 p-4 text-center hover:shadow-2xl border-b-4 border-green-450 mb-8"
                   style={{ background: "#F6F5F5" }}
                 >
                   <Reveal effect="fadeInUp">

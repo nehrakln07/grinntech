@@ -203,7 +203,7 @@ const News = () => {
                 {/* <h2 className="text-left text-gray-900">{item.title}</h2> */}
               </Slide>
               <SliderComponent
-                arrows={true}
+                arrows={isMobile ? false : true}
                 dots={false}
                 slidesToShow={isMobile ? 1 : 3}
                 slidesToScroll={1}

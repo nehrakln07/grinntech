@@ -233,13 +233,13 @@ const BlockComponent = (props) => {
   const { heading, icons, features, knowMore, specification, rightImage } = props;
   return (
     <div className="w-full border-b border-black mb-8">
-      <div className="w-full flex items-center pb-4 justify-between border-b border-black">
-        <h2 className="text-black font-semibold text-4xl">{heading}</h2>
+      <div className="w-full flex items-center pb-4 justify-between border-b border-green-450">
+        <h2 className="text-black font-semibold text-xl">{heading}</h2>
         <div className="flex flex-end">
           {icons && icons.map((item, key) => {
             return (
                 <div className="p-2 border rounded-md border-green-450 ml-2">
-                    <img src={item} width="auto" height="40" />
+                    <img src={item} width="auto" height="30px" style={{height: '30px!important'}} />
                 </div>
             )
           })}
@@ -252,11 +252,11 @@ const BlockComponent = (props) => {
               <div key={key} className="w-full flex items-center text-black mb-6">
                 <div className="w-1/4">
                     <div className="border-2 flex items-center justify-center rounded-full w-12 h-12 border-green-450 ">
-                        <img src={item.icon} width="20" height="40" />
+                        <img src={item.icon} style={{height: '30px!important'}} width="20" height="30" />
                     </div>
                 </div>
                 <div className="w-3/4 text-left">
-                  <h4 className="font-semibold text-xl">{item.text}</h4>
+                  <h4 className="font-semibold text-lg">{item.text}</h4>
                   <hr className="line-gradient" />
                   <p className="font-light text-sm">{item.description}</p>
                 </div>
@@ -294,7 +294,19 @@ const BlockComponent = (props) => {
 
 const Proprietary = () => {
   return (
-    <div className="px-4 py-32 text-2xl text-center text-green-450">
+    <div className="w-full">
+      <div className="w-full flex flex-wrap items-center">
+               <div className="w-full text-black sm:w-1/2">
+                    <h2 className="text-3xl text-semibold">Grinntech proprietary products</h2>
+                    <hr className="w-64 h-1 my-2 bg-green-450" />
+                    <div className="text-xl font-light mt-2">
+                    Proprietary Products to address most common EV segments
+                    </div>
+               </div>
+               <div className="w-full sm:w-1/2">
+                   <img className="m-auto" src="/assets/home-page/Intersect-1.png" alt="Grinntech proprietary products" />
+               </div>
+           </div>
       <div className="details">
         {CONFIG.map((item, key) => {
           return <BlockComponent {...item} />;

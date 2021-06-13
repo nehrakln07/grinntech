@@ -58,10 +58,9 @@ const Header = (childeren) =>{
                     <a href="/">
                         <img src={LogoIcon} />
                     </a>
-                    <span className="hidden sm:block pl-2 text-lg italic">Performance matter</span>
                 </div>
                 <div className="header-menu sm:hidden">
-                    <button className="border-2 border-black rounded px-3 py-1 outline-none" onClick={()=> setIsMenuActive(!isMenuActive)}>
+                    <button className="border-2 border-black rounded px-3 py-1 outline-none focus:outline-none" onClick={()=> setIsMenuActive(!isMenuActive)}>
                         <i class={`fa ${isMenuActive ? 'fa-times' : 'fa-bars'}`} aria-hidden="true"></i>
                     </button>
                 </div>

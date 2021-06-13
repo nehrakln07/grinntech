@@ -41,31 +41,40 @@ const HomeSliderComponent = (props) => {
       >
         {props.config.map((item, key) => {
           return (
-            <div key={key} className={`relative ${props.sliderClassName ? props.sliderClassName: ''}`}>
-              <img src={item.image} />
+            <div
+              key={key}
+              className={`relative ${
+                props.sliderClassName ? props.sliderClassName : ""
+              }`}
+            >
+              <img className="h-80 sm:h-full" src={item.image} />
               {item.component && item.component()}
             </div>
           );
         })}
       </Slider>
-      {
-        props.customArrow && 
-        <div className="flex  justify-end items-center pr-16">
-          <button className="flex z-10" onClick={_previous}>
-            <i class="fa fa-long-arrow-left px-1"></i>
+      {props.customArrow && (
+        <div className="home-arrow-button flex justify-end items-center pr-16">
+          <button
+            className="flex z-10 outline-none focus:outline-none w-12"
+            onClick={_previous}
+          >
+            <span class="long-arrow-left"></span>
           </button>
-          <button className="z-10 text-xs border-2 border-black p-2 rounded-full" onClick={isRunning ? _pause : _play}>
-            <i
-              class={
-                isRunning ? "fa fa-pause px-1" : "fa fa-play px-1"
-              }
-            ></i>
+          <button
+            className="z-10 border rounded-full border-white p-2 mx-4 outline-none focus:outline-none"
+            onClick={isRunning ? _pause : _play}
+          >
+            <i class={isRunning ? "fa fa-pause px-1" : "fa fa-play px-1"}></i>
           </button>
-          <button className="flex z-10" onClick={_next}>
-            <i class="fa fa-long-arrow-right px-1"></i>
+          <button
+            className="flex z-10 outline-none focus:outline-none  w-11"
+            onClick={_next}
+          >
+            <span class="long-arrow-right"></span>
           </button>
         </div>
-      }
+      )}
     </div>
   );
 };

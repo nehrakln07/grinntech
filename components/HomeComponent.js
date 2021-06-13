@@ -81,8 +81,8 @@ const HOME_SLIDER_CONFIG = [
     image: HomeBg1,
     component: () => {
       return (
-        <div className="absolute z-10 p-8 top-20 left-10">
-          <h1 className="text-white text-5xl mt-8 mb-4 font-normal">
+        <div className="absolute z-10 p-8 bottom-0 left-0 sm:bottom-10 sm:left-10">
+          <h1 className="text-white text-3xl mt-8 mb-4 font-normal">
             A team committed to power the coming EV revolution
           </h1>
           <hr className="w-2/5 h-1 bg-green-450 mb-6" />
@@ -97,8 +97,8 @@ const HOME_SLIDER_CONFIG = [
     image: HomeBg2,
     component: () => {
       return (
-        <div className="absolute z-10 p-8 bottom-24 left-10 w-full sm:w-1/2">
-          <h1 className="text-black text-5xl mt-8 mb-4 font-normal">
+        <div className="absolute z-10 p-8 bottom-0 left-0 sm:bottom-10 sm:left-10 w-full sm:w-1/2">
+          <h1 className="text-black text-3xl mt-8 mb-4 font-normal">
             A team committed to power the coming EV revolution
           </h1>
           <hr className="w-2/5 h-1 bg-green-450 mb-6" />
@@ -113,8 +113,8 @@ const HOME_SLIDER_CONFIG = [
     image: HomeBg3,
     component: () => {
       return (
-        <div className="absolute z-10 p-8 bottom-4 left-10 w-full sm:w-1/2">
-          <h1 className="text-white text-5xl mt-8 mb-4 font-normal">
+        <div className="absolute z-10 p-8 bottom-0 left-0 sm:bottom-10 sm:left-10 w-full sm:w-1/2">
+          <h1 className="text-white text-3xl mt-8 mb-4 font-normal">
             Custom battery development optimally designed and made to customer
             requirements
           </h1>
@@ -130,8 +130,8 @@ const HOME_SLIDER_CONFIG = [
     image: HomeBg4,
     component: () => {
       return (
-        <div className="absolute z-10 p-8 bottom-4 left-10 w-full sm:w-1/2">
-          <h1 className="text-black text-5xl mt-8 mb-4 font-normal">
+        <div className="absolute z-10 p-8 bottom-0 left-0 sm:bottom-10 sm:left-10 w-full sm:w-1/2">
+          <h1 className="text-black text-3xl mt-8 mb-4 font-normal">
             Wide product range
           </h1>
           <hr className="w-2/5 h-1 bg-green-450 mb-6" />
@@ -179,7 +179,7 @@ const Home = () => {
       >
         <div className="w-full">
           <HomeSliderComponent
-            dots={isMobile ? false : true}
+            dots={false}
             slidesToShow={1}
             slidesToScroll={1}
             config={HOME_SLIDER_CONFIG}
@@ -187,7 +187,7 @@ const Home = () => {
             infinite={true}
             autoplaySpeed={5000}
             cssEase={"linear"}
-            customArrow={isMobile ? false : true}
+            customArrow={isMobile ? false :true}
           />
         </div>
       </section>
@@ -197,7 +197,7 @@ const Home = () => {
       >
         <Heading text="Powering the transformation of mobility" />
         <Reveal effect="fadeInUp">
-          <div className="text-3xl w-full sm:w-2/4">
+          <div className="text-lg w-full sm:w-2/4">
             <p>
               EV Batteries & Solutions that employ intelligent hardware &
               applications to achieve:
@@ -212,7 +212,7 @@ const Home = () => {
         </Reveal>
       </section>
       <section className="container p-16 w-full">
-        <Heading text="Products and Services" align="right" />
+        <Heading text="Products and Services"/>
         <div className="flex justify-between flex-wrap">
           {PS_CONFIG.map((item, key) => {
             return (
@@ -222,8 +222,8 @@ const Home = () => {
                 </div>
                 <div className="w-full p-4 bg-white">
                   <Reveal effect="fadeInUp">
-                    <h4 className="text-lg text-green-450">{item.heading}</h4>
-                    <p className="text-sm text-black">{item.content}</p>
+                    <h4 className="text-xl font-medium text-green-450">{item.heading}</h4>
+                    <p className="text-base font-light text-black">{item.content}</p>
                   </Reveal>
                 </div>
               </div>
@@ -234,7 +234,7 @@ const Home = () => {
       <section className="container p-16">
         <Heading text="Featured In" />
         <SliderComponent
-          arrows={true}
+          arrows={isMobile ? false : true}
           dots={false}
           slidesToShow={isMobile ? 1 : 3}
           slidesToScroll={1}

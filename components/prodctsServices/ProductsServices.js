@@ -24,11 +24,11 @@ const ProductsServices = () =>{
     return(
         <div className="container py-8">
             <Heading text="Powering the transformation of mobility" style={{fontSize: '1.5rem!important', lineHeight: '2rem!important'}} />
-            <div className="text-4xl font-light">
+            <div className="text-xl font-light">
                 <p>Grinntech offer a large range of batteries and BMS to suit a variety of applications</p>
             </div>
             <div className="tab-container mt-8">
-                <div className="px-0 sm:px-16 sticky top-24 bg-white z-20">
+                <div className="px-0 sm:px-16 sticky top-20 sm:top-24 bg-white z-20">
                     <ul className="rc-tab">
                     {
                     TAB_CONFIG.map((tab, key)=>{

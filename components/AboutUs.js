@@ -39,7 +39,7 @@ const AboutUs = () => {
         <Heading text="Our Mission" />
         <div className="w-full">
           <div className="w-full sm:w-1/2">
-            <p className="text-2xl font-normal">
+            <p className="text-lg font-normal">
               Mobility for the Future needs to be environmentally sustainable,
               economically affordable, and socially fun. Electrification of
               mobility is recognised as a key enabler to achieve these goals.
@@ -57,11 +57,11 @@ const AboutUs = () => {
       <div className="w-full">
         <Heading text="Our Story" />
         <div className="w-full flex flex-wrap">
-          <div className="w-full sm:w-1/2">
+          <div className="w-full sm:w-3/5">
             <img className="m-auto" src="/assets/About/story.png" />
           </div>
-          <div className="w-full sm:w-1/2">
-            <p className="text-2xl font-normal">
+          <div className="w-full sm:w-2/5 ">
+            <p className="text-lg font-normal px-8">
               Mobility for the Future needs to be environmentally sustainable,
               economically affordable, and socially fun. Electrification of
               mobility is recognised as a key enabler to achieve these goals.
@@ -77,7 +77,7 @@ const AboutUs = () => {
         <Heading text="Our People" />
         <div className="w-full flex flex-wrap">
           <div className="w-full sm:w-1/2">
-            <p className="text-2xl font-normal">
+            <p className="text-lg font-normal">
               Mobility for the Future needs to be environmentally sustainable,
               economically affordable, and socially fun. Electrification of
               mobility is recognised as a key enabler to achieve these goals.

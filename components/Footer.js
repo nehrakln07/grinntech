@@ -1,5 +1,5 @@
 import React from "react";
-import Reveal from 'react-reveal/Reveal';
+import Reveal from "react-reveal/Reveal";
 import FbIcon from "../public/assets/fb.svg";
 import TwitteIcon from "../public/assets/twitter.svg";
 import LinkedinIcon from "../public/assets/linkedin.svg";
@@ -39,12 +39,30 @@ const Footer = () => {
       <div className="container">
         <div class="flex justify-between flex-wrap w-full pt-8 border-b border-white">
           <div className="w-full sm:w-1/2 flex flex-start flex-wrap">
-            <div class="w-full sm:w-1/2">
+            <div className="w-full sm:hidden  text-lg text-white opacity-70 mb-8">
               <Reveal effect="fadeInUp">
-                <h2 className="text-white text-sm font-medium mb-2">
+                <ul>
+                  <li className="mb-2">
+                    <a href="/">Home</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="/about-us">About Us</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="/blogs">Blogs</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="/contact-us">Contact US</a>
+                  </li>
+                </ul>
+              </Reveal>
+            </div>
+            <div class="w-full sm:w-1/2 mb-8">
+              <Reveal effect="fadeInUp">
+                <h2 className="text-white text-lg font-medium mb-2">
                   Grinntech Motors & Services Pvt. Ltd.
                 </h2>
-                <p className="text-xs leading-6 text-white opacity-70 font-light">
+                <p className="text-sm leading-6 text-white opacity-70 font-light">
                   11B/1, 1st Cross Road
                   <br />
                   Ambattur Industrial Estate
@@ -53,7 +71,7 @@ const Footer = () => {
                 </p>
               </Reveal>
             </div>
-            <div className="w:full sm:w-1/2 px-4">
+            <div className="w:full sm:w-1/2 hidden sm:block px-4 mb-8">
               <Reveal effect="fadeInUp">
                 <div class="gmap_canvas">
                   <iframe
@@ -72,26 +90,26 @@ const Footer = () => {
               </Reveal>
             </div>
           </div>
-          <div className="w:full sm:w-1/5 text-xs text-white opacity-70">
+          <div className="w-full hidden sm:block sm:w-1/5 text-lg text-white opacity-70 mb-8">
             <Reveal effect="fadeInUp">
               <ul>
-                <li className="pl-2">
+                <li className="mb-2">
                   <a href="/">Home</a>
                 </li>
-                <li className="p-2">
+                <li className="mb-2">
                   <a href="/about-us">About Us</a>
                 </li>
-                <li className="p-2">
+                <li className="mb-2">
                   <a href="/blogs">Blogs</a>
                 </li>
-                <li className="p-2">
+                <li className="mb-2">
                   <a href="/contact-us">Contact US</a>
                 </li>
               </ul>
             </Reveal>
           </div>
-          <div className="w:full sm:w-1/5 ">
-            <div className="text-2xl text-white font-medium mb-8">
+          <div className="w-full sm:w-1/5 mb-8">
+            <div className="text-2xl text-white font-medium mb-2 sm:mb-6">
               Let's Connect
             </div>
             <Reveal effect="fadeInUp">
